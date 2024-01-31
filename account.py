@@ -1,17 +1,15 @@
-# account.py
 class Account:
-    def __init__(self, account_number, balance):
+    def __init__(self, account_number, account_type, balance):
         self.account_number = account_number
+        self.account_type = account_type
         self.balance = balance
 
     def deposit(self, amount):
         self.balance += amount
-
+        
     def withdraw(self, amount):
-        if amount > self.balance:
-            print("So du tai khoan khong du")
-        else:
-            self.balance -= amount
-
-    def get_balance(self):
-        return self.balance
+        self.balance -= amount
+    
+    # def isAccountExisted(self)
+    # def get_balance(self):
+    #     return self.balance
