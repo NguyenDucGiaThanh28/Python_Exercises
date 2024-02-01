@@ -6,10 +6,6 @@ class Account:
 
     def deposit(self, amount):
         self.balance += amount
-        
+
     def withdraw(self, amount):
         self.balance -= amount
-    
-    # def isAccountExisted(self)
-    # def get_balance(self):
-    #     return self.balance
